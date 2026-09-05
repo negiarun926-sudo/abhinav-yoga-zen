@@ -14,7 +14,150 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      enquiries: {
+        Row: {
+          created_at: string
+          email: string | null
+          id: string
+          message: string | null
+          name: string
+          phone: string
+          preferred_date: string | null
+          preferred_time: string | null
+          service: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          message?: string | null
+          name: string
+          phone: string
+          preferred_date?: string | null
+          preferred_time?: string | null
+          service?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string
+          preferred_date?: string | null
+          preferred_time?: string | null
+          service?: string | null
+        }
+        Relationships: []
+      }
+      photos: {
+        Row: {
+          caption: string | null
+          created_at: string
+          id: string
+          section: string | null
+          sort: number
+          url: string
+        }
+        Insert: {
+          caption?: string | null
+          created_at?: string
+          id?: string
+          section?: string | null
+          sort?: number
+          url: string
+        }
+        Update: {
+          caption?: string | null
+          created_at?: string
+          id?: string
+          section?: string | null
+          sort?: number
+          url?: string
+        }
+        Relationships: []
+      }
+      pricing: {
+        Row: {
+          active: boolean
+          class_name: string
+          created_at: string
+          description: string | null
+          duration: string | null
+          id: string
+          package_name: string | null
+          price: string | null
+          sort: number
+        }
+        Insert: {
+          active?: boolean
+          class_name: string
+          created_at?: string
+          description?: string | null
+          duration?: string | null
+          id?: string
+          package_name?: string | null
+          price?: string | null
+          sort?: number
+        }
+        Update: {
+          active?: boolean
+          class_name?: string
+          created_at?: string
+          description?: string | null
+          duration?: string | null
+          id?: string
+          package_name?: string | null
+          price?: string | null
+          sort?: number
+        }
+        Relationships: []
+      }
+      reviews: {
+        Row: {
+          body: string
+          created_at: string
+          id: string
+          name: string
+          rating: number
+          status: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          id?: string
+          name: string
+          rating: number
+          status?: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          id?: string
+          name?: string
+          rating?: number
+          status?: string
+        }
+        Relationships: []
+      }
+      site_content: {
+        Row: {
+          key: string
+          updated_at: string
+          value: string
+        }
+        Insert: {
+          key: string
+          updated_at?: string
+          value: string
+        }
+        Update: {
+          key?: string
+          updated_at?: string
+          value?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
