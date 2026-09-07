@@ -1,34 +1,38 @@
-import hero from "@/assets/hero-wildthing.jpg.asset.json";
-import portrait from "@/assets/portrait-river.jpg.asset.json";
-import forearm from "@/assets/pose-forearm.jpg.asset.json";
-import crow from "@/assets/pose-crow.jpg.asset.json";
-import wheel from "@/assets/pose-wheel.jpg.asset.json";
-import fold from "@/assets/pose-fold.jpg.asset.json";
-import splits from "@/assets/pose-splits.jpg.asset.json";
-import balance from "@/assets/pose-balance.jpg.asset.json";
-
 export const IMAGES = {
   hero: {
-    url: hero.url,
+    url: "/images/hero-wildthing.jpg",
     alt: "Abhinav Maithani in wild thing pose on a rock beside a turquoise river",
   },
   portrait: {
-    url: portrait.url,
+    url: "/images/portrait-river.jpg",
     alt: "Abhinav Maithani standing in the river with hands in prayer position",
   },
   forearm: {
-    url: forearm.url,
+    url: "/images/pose-forearm.jpg",
     alt: "Abhinav Maithani in a forearm balance with legs lifted, mist over the river behind him",
   },
-  crow: { url: crow.url, alt: "Abhinav Maithani holding crow pose on a forest path" },
-  wheel: { url: wheel.url, alt: "Abhinav Maithani in wheel pose on a riverside platform" },
-  fold: { url: fold.url, alt: "Abhinav Maithani in a bound standing forward fold beside the river" },
-  splits: { url: splits.url, alt: "Abhinav Maithani in full front splits with arms raised" },
+  crow: {
+    url: "/images/pose-crow.jpg",
+    alt: "Abhinav Maithani holding crow pose on a forest path",
+  },
+  wheel: {
+    url: "/images/pose-wheel.jpg",
+    alt: "Abhinav Maithani in wheel pose on a riverside platform",
+  },
+  fold: {
+    url: "/images/pose-fold.jpg",
+    alt: "Abhinav Maithani in a bound standing forward fold beside the river",
+  },
+  splits: {
+    url: "/images/pose-splits.jpg",
+    alt: "Abhinav Maithani in full front splits with arms raised",
+  },
   balance: {
-    url: balance.url,
+    url: "/images/pose-balance.jpg",
     alt: "Abhinav Maithani in a standing balance pose on stone steps",
   },
 } as const;
+
 
 export const CONTACT = {
   name: "Abhinav Maithani",
